@@ -12,5 +12,9 @@ void showTime(int seconds, int index = 0)
 } 
 int main()
 {
-    showTime(963510);
+	int s;
+	printf("Moi Ban Nhap So Giay Can Quy Doi:");
+	scanf("%d", &s);
+    printf("%ds Sau Khi Quy Doi Co Ket Qua La:", s);
+	showTime(s);
 }
