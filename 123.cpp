@@ -1,20 +1,19 @@
 #include<stdio.h>
+#include<string.h>
+#include<conio.h>
+void inchuoinguoc(char *s);
 main()
 {
-	printf("\nnhap %d ^ %d:\n", 4,5);
-	int n, mu;
-	printf("nhap n:");
-	scanf("%d", &n);
-for(int i = 2; i <= n; i++)
+	char *string;
+	printf("\nNhap:");
+	gets(string);
+
+	printf("Chuoi nguoc: %d ",	putchar(string[2]));
+	inchuoinguoc(string);
+	getch();
+}
+void inchuoinguoc(char *s)
 {
-        mu = 0;
-        while(n % i == 0){
-            mu++;
-            n /= i;
-        }
-            if(mu > 1) printf("%d^%d", i, mu);
-            else printf("%d", i);
-    }
-    
-    printf("\nnhap %d^%d:", 4,5);
+	int i;
+	for (i=strlen(s); i>=0; i--) putchar(s[i]);
 }
